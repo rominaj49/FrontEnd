@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+.main {
+    background-image:url(./../../../assets/Logosproyecto/Port.png);
+    background-size: 100%;
+    margin: 0em 0em 4em;
+    display: grid;
+    align-items: center;
+    gap: 2em;
+    grid-template-columns: repeat(2,1fr);
+
+   
+  }
+
+  
+  h1, p{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    color: white;
+    margin-left: 30px;
+    
+  }
+
+  .description{
+    
+    font-size: 20px;
+  }
+  
+  .info-content span {
+    font-weight: 00;
+    color: aqua;
+  }
+
+  .info-content{
+    margin-top: -50px;
+  }
+
+ 
+  
+
+  @media only screen and (max-width: 1200px) and (min-width: 981px)  {
+    .main{
+      height: 470px;
+      
+    }
+    .info-content{
+      margin-top: 40px;
+    }
+}
+
+  @media only screen and (max-width: 980px) and (min-width: 576px)  {
+
+    .main{
+      height: 627px;
+      grid-template-columns: none;
+
+    }
+    .info-content{
+      margin-top: 150px;
+    }
+   
+     .girl{
+      display: none;
+     }
+}
+
+@media(max-width: 576px){
+ 
+.main{
+  background-size: 100%;
+  grid-template-columns: none;
+  height: 100vw;
+  }
+ .girl{
+  display: none;
+
+ }
+  .info-content{
+    margin-top: 100px;
+  }
+  
+}
+
+
+
+.entrada {
+  overflow: hidden;
+  font-family:'Montserrat';
+  white-space: nowrap;
+  font-size: 3.4em;
+  color: #f2faff;
+  width: 400px;
+  border-right: 2px solid rgba(0, 0, 0, 0.87);
+  animation: animacionIntro 2.8s steps(23, end),
+    animacionBar 1s step-end infinite;
+}
+
+@keyframes animacionIntro {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 400px;
+  }
+}
+
+@keyframes animacionBar {
+  0%,
+  100% {
+    border-color: rgba(241, 59, 59, 0);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.87);
+  }
+}
