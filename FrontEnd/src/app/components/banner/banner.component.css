@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+
+
 .main {
     background-image:url(./../../../assets/Logosproyecto/Port.png);
     background-size: 100%;
-    margin: 0em 0em 4em;
+    /*margin: 0em 0em 4em;*/
     display: grid;
     align-items: center;
     gap: 2em;
     grid-template-columns: repeat(2,1fr);
+    height:692px
 
-   
   }
 
   
@@ -40,7 +43,8 @@
 
   @media only screen and (max-width: 1200px) and (min-width: 981px)  {
     .main{
-      height: 470px;
+      height: 692px;
+      
       
     }
     .info-content{
@@ -51,11 +55,13 @@
   @media only screen and (max-width: 980px) and (min-width: 576px)  {
 
     .main{
+      
       height: 627px;
       grid-template-columns: none;
 
     }
     .info-content{
+      
       margin-top: 150px;
     }
    
@@ -69,7 +75,7 @@
 .main{
   background-size: 100%;
   grid-template-columns: none;
-  height: 100vw;
+  height: 100vh;
   }
  .girl{
   display: none;

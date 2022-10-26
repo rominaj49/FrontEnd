@@ -1,3 +1,4 @@
+
 h1, h2, h3, p{
     display: inline;
     color: white;
@@ -8,13 +9,14 @@ h1{
     text-align: center;
     margin: 0px 0px 35px;
     text-shadow: 2px 2px 2px #7e7e7e; 
-
+    padding: 25px;
 }
 
 li{
     list-style: none;
 }
 
-
-
+.margen{
+    margin-bottom: 70px;
+}
 

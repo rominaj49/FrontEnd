@@ -1,5 +1,7 @@
 .row{
     padding: 30px;
+    height: 400px;
+
 }
 
 div{
@@ -7,6 +9,7 @@ div{
     
 }
 #nombre{
+    font-size: 25px;
     font-weight: bold;
     margin-top: 100%;
 }
@@ -26,7 +29,10 @@ h1{
      
 }
 
+.margen{
+    margin-bottom: 70px;
 
+}
 
 /*estilo de la foto*/
 
@@ -52,6 +58,8 @@ h1{
         left: 20%;
         margin-left: -128px;
         margin-top: -87px;}
+
+
 }
 @media only screen and (max-width: 1200px) and (min-width: 992px)  {
     #fotodeperfil{
@@ -90,6 +98,9 @@ h1{
         left: 20%;
         margin-left: 3px;
         margin-top: -93x;
+    }
+    .row{
+        height: 1000px;
     }
     
 }
