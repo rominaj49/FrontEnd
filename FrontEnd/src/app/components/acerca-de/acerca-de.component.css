@@ -9,6 +9,7 @@ div{
     
 }
 #nombre{
+    
     font-size: 25px;
     font-weight: bold;
     margin-top: 100%;
@@ -26,7 +27,9 @@ h1{
     color: white;
     text-shadow: 2px 2px 2px #7e7e7e; 
     font-size: 40px;  
-     
+    font-family: 'Ruluko', sans-serif;
+    font-weight: 600;
+
 }
 
 .margen{

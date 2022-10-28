@@ -1,25 +1,156 @@
 
-h1, h2, h3, p{
-    display: inline;
-    color: white;
-}
 h1{
     
     color: white;
-    font-size: 40px; 
-    text-align: center;
-    margin: 0px 0px 35px;
+    font-size: 45px; 
+    text-align: left;
+    margin: 0px 90px 35px;
     text-shadow: 2px 2px 2px #7e7e7e; 
     padding: 25px;
+    font-family: 'Ruluko', sans-serif;
+    font-weight: 600;
+}
+h2{
+  font-family: 'Ruluko';
+  font-weight: 400;
 
 }
-
-li{
-    list-style: none;
+p{
+  font-family: 'Poppins', sans-serif;
+  font-style: oblique;
+  font-size: 16px;
+}
+.btnadd{
+  color: aqua;
+}
+.btnadd:hover{
+  color: white;
+  transition: 0.3s;
 }
 
-.margen{
-    margin-bottom: 70px;
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 30%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #7E4AEB;
+    border: 4px solid white;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 5%;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #bfa1ff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #bfa1ff transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+    background-color: #bfa1ff;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 20px -13px #9666ff;
+    }
+    
+  
+ .minibtn{
+  color: #231541;
+
+}
+    .minibtn:hover{
+      
+      color: white;
+      transition: 0.s;
+
+    }
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .h1{
+    align-items: center;
+    margin-left: 0;
+  }
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+
+  .left::after, .right::after {
+  left: 6px;
+  }
+  
+  .right {
+  left: 0%;
+  }
+  .right::before{
+    left: 60px;
+  }
+}
+
 
 

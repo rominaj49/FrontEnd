@@ -21,6 +21,8 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { InterceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 
 
 @NgModule({
@@ -36,8 +38,10 @@ import { InterceptorProvider } from './service/interceptor-service';
     ProyectosComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
-  ],
+    LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
