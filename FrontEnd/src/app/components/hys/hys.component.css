@@ -1,12 +1,10 @@
 h1{
     
-    color: white;
-    font-size: 40px; 
-    text-align: center;
-    margin: 0px 0px 35px;
-    padding: 25px;
-    text-shadow: 2px 2px 2px #7e7e7e; 
-
+  font-family: "Poppins",sans-serif;
+  color: white;
+  margin-top: 60px;
+  text-shadow: 2px 2px 2px #7e7e7e; 
+  padding: 25px;
 
 }
 .row{

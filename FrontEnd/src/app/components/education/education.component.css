@@ -1,22 +1,196 @@
 
+.conten{
+  display: flex;
+  grid-template-columns: repeat(2,1fr);
+  size: 100%;
+  align-items: center;
+
+}
+
+.icono{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fae7ff;
+  border-radius: 50%;
+}
+
+.cont{
+  display: flex;
+  justify-content: space-between;
+}
+.girl{
+  width: 45%;
+}
 h1{
+  font-family: "Poppins",sans-serif;
+  color: white;
+  font-size: 3rem; 
+  text-align: right;
+  margin: 40px 90px 40px;
+  text-shadow: 2px 2px 2px #7e7e7e; 
+  padding: 25px;
+}
+
+h2{
+  font-size: 25px;
+  font-family: 'Ruluko';
+  font-weight: 600;
+}
+
+h3{
+  font-family: 'Ruluko' sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.btnadd{
+  color: aqua;
+}
+.btnadd:hover{
+  color: white;
+  transition: 0.3s;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 47%;
+}
+
+
+
+/* Container around content */
+.container {
+  position: relative;
+  background-color: inherit;
+  width: 130%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  height: 25px;
+  right: -17px;
+  background-color: #7E4AEB;
+    border: 4px solid white;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  padding: 1.5rem;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* The actual content */
+.content {
+  padding: 10px 20px;
+    background-color: #bfa1ff;
+    position: relative;
+    border-radius: 6px;
+    margin-left: 15px;
+    border-color: aliceblue;
+    margin-top: 8px;
+    box-shadow: 6px -6px #9666ff;
+}
+
+ .minibtn{
+  color: #231541;
+
+}
+    .minibtn:hover{
+      
+      color: white;
+      transition: 0.s;
+
+    }
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .h1{
+    align-items: center;
+    margin-left: 0;
+  }
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+
+  .left::after, .right::after {
+  left: 6px;
+  }
+  
+  .right {
+  left: 0%;
+  }
+  .right::before{
+    left: 60px;
+  }
+
+  .h1{
+    text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 980px) and (min-width: 576px)  {
+
+ 
+   .girl{
+    display: none;
+   }
+
+   .timeline {
+    margin: 30px;
+    width: 100%;
+  }
+
+  .h1{
+  text-align: center;
+  }
+}
+
+@media(max-width: 576px){
+ 
+  .main{
+    grid-template-columns: none;
+    }
+   .girl{
+    display: none;
+  
+  }
+    .right::after {
+      left: 22px;
+    }
+
+    .timeline {
+      margin: 30px;
+      width: 100%;
+    }
+    .h1{
+      text-align: center;
+    }
     
-    color: white;
-    font-size: 45px; 
-    text-align: left;
-    margin: 0px 90px 35px;
 
-    text-shadow: 2px 2px 2px #7e7e7e; 
-    padding: 25px;
-    font-family: 'Ruluko', sans-serif;
-    font-weight: 600;
 }
-
-li{
-    list-style: none;
-}
-
-.margen{
-    margin-bottom: 70px;
-}
-
