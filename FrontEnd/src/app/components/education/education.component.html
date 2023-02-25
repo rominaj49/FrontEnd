@@ -1,55 +1,47 @@
 <div class="section-exp">
 
 
-  <div class="row m-0 "  id="edu" style="background-color: #3a226c; ">
-  
-  <div>
-      <h1>   Educación<button  class="btn btn-outline-link " routerLink="/nuevaedu" *ngIf="isLogged">
-        <i class="fa-solid fa-circle-plus  fa-2x btnadd " ></i>
-        </button> 
-       </h1> 
-  
-  </div>
-  
+  <div class="row m-0 " id="edu" style="background-color: #3a226c; ">
+
+    <div>
+      <h1>Educación<button class="btn btn-outline-link " routerLink="/nuevaedu" *ngIf="isLogged">
+          <i class="fa-solid fa-circle-plus  fa-2x btnadd "></i>
+        </button>
+      </h1>
+
+    </div>
+
     <div class="conten">
-   
-    <div class="timeline" >
+
+      <div class="timeline">
 
 
-        <div  *ngFor="let Educacion of educacion"  >
-          <div class="content" data-aos="fade-up" >
-          
-            <div class= "cont" >
-              <h2>{{Educacion.nombreE}}</h2>
-              <div style="display: flex;align-content: flex-end;justify-content: space-between;" >
+        <div *ngFor="let Educacion of educacion">
+          <div class="content">
+            <div class="cont">
+              <h2>{{Educacion.institutoE}} </h2>
+              <div style="display: flex;align-content: flex-end;justify-content: space-between;">
                 <td *ngIf="isLogged">
                   <button class="btn btn-outline-link  minibtn" routerLink="/editedu/{{Educacion.id}}">
-                      <i class="fa-solid fa-pen-to-square " ></i></button>
-              </td>
-              <td *ngIf="isLogged">
+                    <i class="fa-solid fa-pen-to-square "></i></button>
+                </td>
+                <td *ngIf="isLogged">
                   <button class="btn btn-outline-link minibtn" (click)="delete(Educacion.id)">
-                      <i class="fa-sharp fa-solid fa-trash" ></i></button>
-              </td>
+                    <i class="fa-sharp fa-solid fa-trash"></i></button>
+                </td>
+              </div>
             </div>
-            </div>
-            <h3>{{Educacion.institutoE}} </h3>
+            <h3>{{Educacion.nombreE}}</h3>
             <p>{{Educacion.descripcionE}}</p>
           </div>
         </div>
+      </div>
+
+
+      <div class="girl" data-aos="zoom-in">
+        <img src="../../../assets/Logosproyecto/giphy0.gif" alt="" height="100%" width="90%">
+      </div>
+
     </div>
 
-    <div class="girl" data-aos="zoom-in">
-      <img src="../../../assets/Logosproyecto/giphy0.gif" alt="" height="100%" width="90%">
-     </div>
-    
-   </div>
-
-
   </div>
-
-
-
-
-
-
-

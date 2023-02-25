@@ -9,3 +9,16 @@ hr {
 
 }
 
+
+
+body::-webkit-scrollbar {
+	width: 10px;
+  background: rgba(58,34,108,1) 86%;
+  
+}
+
+body::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255, .2);
+	border-radius: 10px;
+	border-right: 3px solid  rgba(58,34,108,1) 86%;
+}

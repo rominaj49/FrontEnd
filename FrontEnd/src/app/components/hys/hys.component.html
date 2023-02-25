@@ -1,31 +1,70 @@
 
 <div class="row m-0" >
-  <h1>Hard & Soft skills</h1>
+  <div>
+    <h1>Hard & Soft skills
+      <button  class="btn btn-outline-link " routerLink="/newskill" *ngIf="isLogged">
+        <i class="fa-solid fa-circle-plus  fa-2x btnadd " ></i>
+        </button> 
+    </h1> 
+  </div>
+ 
+  
 
-  <div class="text-center col sm-4 col-md-4 col-lg-4" data-aos="fade-right">
+  <div class="text-center col sm-4 col-md-4 col-lg-4 circulos" data-aos="fade-right" *ngFor="let skill of skill">
     <circle-progress
-    [percent]="100"
+    [percent]="(skill.porcentaje)"
     [radius]="90"
     [imageSrc]="'../../../assets/Logosproyecto/icons/html2.png'"
     [showUnits]="false"
-    [showImage]="true"
+    [showTitle]="true"
+    [showImage]="false"
     [imageWidth]="100"
     [imageHeight]="100"
-    [title]="'HTML'"
+    [title]="(skill.nombre)"
     [titleColor]="'white'"
-    [titleFontSize]="'2em'"
+    [titleFontSize]="'1.6em'"
     [showSubtitle]="false"
-    [outerStrokeWidth]="15"
-    [innerStrokeWidth]="2"
-    [outerStrokeColor]="'#ff5722'"
+    [outerStrokeWidth]="17"
+    [innerStrokeWidth]="3"
+    [outerStrokeColor]="'aqua'"
     [innerStrokeColor]="'#FFFF'"
     [animation]="true"
-    [animationDuration]="1000"
+    [animationDuration]="1500"
 
   ></circle-progress>
+
+  <div>
+    <td *ngIf="isLogged">
+      <button class="btn btn-outline-link  minibtn" routerLink="/editskill/{{skill.id}}">
+          <i class="fa-solid fa-pen-to-square " ></i></button>
+  </td>
+  <td *ngIf="isLogged">
+      <button class="btn btn-outline-link minibtn" (click)="delete(skill.id)">
+          <i class="fa-sharp fa-solid fa-trash" ></i></button>
+  </td>
+
+  </div>
   </div>
     
-  <div class="text-center col sm-4 col-md-4 col-lg-4" data-aos="fade-right">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="text-center col sm-4 col-md-4 col-lg-4" data-aos="fade-right">
     <circle-progress
     [percent]="100"
     [radius]="90"
@@ -276,6 +315,6 @@
     [animationDuration]="1000"
 
   ></circle-progress>
-  </div>
+  </div> -->
 
 </div>

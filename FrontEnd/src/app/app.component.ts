@@ -6,8 +6,9 @@ import * as AOS from 'aos';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent { 
   title = 'Portfolio_AP';
+  
   ngOnInit():void{ 
     AOS.init();
   }

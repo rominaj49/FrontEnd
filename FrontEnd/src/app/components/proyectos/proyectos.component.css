@@ -1,32 +1,94 @@
 .row{
-    padding: 20px;
     background-color: rgba(27,0,75,1);
+    align-items: center;
+     text-align: center;
 }
 
-.contenedor{
-    width: auto;
-    margin: 0px 0px 200px;
-
-}
 h1{
+    font-family: "Poppins",sans-serif;
     color: white;
-    font-size: 40px; 
+    font-size: 3rem; 
+    color: white;
     text-align: center;
-    margin: 0px 0px 35px;
+    margin: 0px 0px 20px;
     text-shadow: 2px 2px 2px #7e7e7e; 
     padding: 30px;
-    margin-top: 30px;
+}
+.contenedor{
+    color: rgb(255, 255, 255);
+    width: 900px;
+    height: auto;
+align-items: center;
+text-align: center;
+margin: 0 auto;
+    border-radius: 10px;
+  border-left: 2px #1edbe2 solid;
+  border-radius: 10px;
+  margin-block-end: 100px;
+  
+}
+
+h2{
+    text-align: left;
+}
+
+.borrarEditar{
+    display: flex;
+flex-direction: row-reverse;
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+.parte1, .parte2{
+    font-family: "Poppins",sans-serif;
+  text-align: justify;
+  align-items: center;
+}
+
+.content{
+  margin-left: 20px;
 
 }
-.parte1, .parte2{
-    
-  display: inline-block; 
-  text-align: justify;
+.img-proyecto{
+    margin-block-end: 100px;
+    box-shadow: 10px 10px 30px rgb(31, 31, 31); /*eje x eje y dimension*/
 }
-h2, p{
+
+.botones{
+    display: flex;
     color: white;
 }
 
-.img-proyecto{
-    box-shadow: 10px 10px 30px rgb(31, 31, 31); /*eje x eje y dimension*/
+.botones .btn {
+    color: white;
+    transition: all .4s ease;
+   
+  }
+  .botones .btn:hover{
+    border: 1px  solid rgb(0, 255, 234);
+   background-color: aqua;
+   color: black;
 }
+
+.btnadd{
+    color: aqua;
+  }
+  .btnadd:hover{
+    color: white;
+    transition: 0.3s;
+  }
+  
+  
+  .btn{
+    color: white;
+  }
+  .minibtnEliminar:hover{
+    color: rgb(172, 0, 0);
+    transition: 0.3s;
+  }
+  .minibtnEditar:hover{
+    color: rgb(196, 196, 0);
+    transition: 0.3s;
+  }

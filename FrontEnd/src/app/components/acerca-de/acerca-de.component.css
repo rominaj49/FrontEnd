@@ -52,7 +52,16 @@ h1{
     } 
 }*/
 
-@media only screen and (max-width: 1900px) and (min-width: 1201px)  {
+@media only screen and (max-width: 2000px) and (min-width: 1501px)  {
+    #fotodeperfil{
+        left: 18%;
+        margin-left: -124px;
+        margin-top: -124px;
+    }
+
+  }
+
+@media only screen and (max-width: 1500px) and (min-width: 1201px)  {
     #fotodeperfil{
         position: absolute;
         width: 15%;
@@ -128,3 +137,16 @@ h1{
     background-color: azure;
     box-shadow: none;
   }
+
+
+  .minibtn{
+    border-radius: 50%;
+  }
+  .btnadd{
+    color: aqua;
+  }
+  .btnadd:hover{
+    color: white;
+    transition: 0.3s;
+  }
+  

@@ -2,7 +2,6 @@ package com.portfolio.mgb.Controller;
 
 import com.portfolio.mgb.Dto.dtoEducacion;
 import com.portfolio.mgb.Entity.Educacion;
-import com.portfolio.mgb.Entity.Experiencia;
 import com.portfolio.mgb.Security.Controller.Mensaje;
 import com.portfolio.mgb.Service.Seducacion;
 import java.util.List;
@@ -21,8 +20,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin (origins = {"http://localhost:4200","https://frontendprueba-ea33f.web.app"})
 @RequestMapping("/educacion")
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "https://frontendprueba-ea33f.web.app")
 
 public class CEducacion {
 
