@@ -45,7 +45,7 @@ public class CProyecto {
     @GetMapping("/detail/{id}")
     public ResponseEntity<proyecto> getById(@PathVariable("id") int id) {
         if (!sproyecto.existsById(id)) {
-            return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity(new Mensaje("No existe"), HttpStatus.NOT_FOUND);
         }
         proyecto proYecto = sproyecto.getOne(id).get();
         return new ResponseEntity(proYecto, HttpStatus.OK);
@@ -99,7 +99,7 @@ public class CProyecto {
 
 
         sproyecto.save(proYecto);
-        return new ResponseEntity(new Mensaje("Skill actualizada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("proyecto actualizada"), HttpStatus.OK);
 
 }
 }
