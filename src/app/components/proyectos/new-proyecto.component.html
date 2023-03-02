@@ -1,27 +1,29 @@
-<div class="container">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombre">Nuevo proyecto</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre"[(ngModel)]="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcion">Descripcion</label>
-                    <input type="text" class="form-control" id="descripcion" name="descripcion"[(ngModel)]="descripcion" required>
-                </div>
-                <div class="form-group">
-                    <label for="githublink">Link de github</label>
-                    <input type="text" class="form-control" id="githublink" name="githublink"[(ngModel)]="githublink" required>
-                </div>
-                <div class="form-group">
-                    <label for="pagelink">Link de la página</label>
-                    <input type="text" class="form-control" id="pagelink" name="pagelink"[(ngModel)]="pagelink" required>
-                </div>
-                <button class="btn btn-primary">
-                 Agregar Proyecto
-                </button>
-            </form>
-        </div>
+
+
+<body>
+        
+    <div class="loginBox"> 
+
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="nombre">Nuevo proyecto</label>
+                <input type="text" class="form-control" id="nombre" name="nombre"[(ngModel)]="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripcion</label>
+                <input type="text" class="form-control" id="descripcion" name="descripcion"[(ngModel)]="descripcion" required>
+            </div>
+            <div class="form-group">
+                <label for="githublink">Link de github</label>
+                <input type="text" class="form-control" id="githublink" name="githublink"[(ngModel)]="githublink" required>
+            </div>
+            <div class="form-group">
+                <label for="pagelink">Link de la página</label>
+                <input type="text" class="form-control" id="pagelink" name="pagelink"[(ngModel)]="pagelink" required>
+            </div>
+            <input type="submit" name="" value="Agregar"/>
+        </form>
+
     </div>
-</div>
+
+</body>

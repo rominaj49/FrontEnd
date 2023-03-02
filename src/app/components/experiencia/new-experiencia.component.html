@@ -1,27 +1,26 @@
-<div class="container">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreE">Cargo</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
-                </div>
-                <div class="form-group">
-                    <label for="nombreE">Nombre de la empresa</label>
-                    <input type="text" class="form-control" id="empresaE" name="empresaE" [(ngModel)]="empresaE" required>
-                </div>
-                <div class="form-group">
-                    <label for="nombreE">fecha hs fecha</label>
-                    <input type="text" class="form-control" id="fechaE" name="fechaE" [(ngModel)]="fechaE" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionE">Descripcion de la tarea</label>
-                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
-                </div>
-                <button class="btn btn-primary">
-                    Agregar experiencia
-                </button>
-            </form>
-        </div>
+<body>
+        
+    <div class="loginBox"> 
+
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="nombreE">Cargo</label>
+                <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
+            </div>
+            <div class="form-group">
+                <label for="nombreE">Nombre de la empresa</label>
+                <input type="text" class="form-control" id="empresaE" name="empresaE" [(ngModel)]="empresaE" required>
+            </div>
+            <div class="form-group">
+                <label for="nombreE">Fecha - Fecha</label>
+                <input type="text" class="form-control" id="fechaE" name="fechaE" [(ngModel)]="fechaE" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcionE">Descripcion de la tarea</label>
+                <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
+            </div>
+            <input type="submit" name="" value="Agregar"/> 
+        </form>
     </div>
-</div>
+
+</body>
