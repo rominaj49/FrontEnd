@@ -1,1 +1,0 @@
-{"ast":null,"code":"export class Educacion {\n  constructor(nombreE, institutoE, descripcionE) {\n    this.nombreE = nombreE;\n    this.institutoE = institutoE;\n    this.descripcionE = descripcionE;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
