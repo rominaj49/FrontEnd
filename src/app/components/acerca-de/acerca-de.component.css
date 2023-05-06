@@ -1,15 +1,16 @@
-.row{
+.row {
     padding: 30px;
     height: 400px;
 
 }
 
-div{
+div {
     text-align: center;
-    
+
 }
-#nombre{
-    
+
+#nombre {
+
     font-size: 25px;
     font-weight: bold;
     margin-top: 100%;
@@ -23,16 +24,16 @@ p {
     font-size: 20px;
 }
 
-h1{
+h1 {
     color: white;
-    text-shadow: 2px 2px 2px #7e7e7e; 
-    font-size: 40px;  
+    text-shadow: 2px 2px 2px #7e7e7e;
+    font-size: 40px;
     font-family: 'Ruluko', sans-serif;
     font-weight: 600;
 
 }
 
-.margen{
+.margen {
     margin-bottom: 70px;
 
 }
@@ -52,40 +53,47 @@ h1{
     } 
 }*/
 
-@media only screen and (max-width: 2000px) and (min-width: 1501px)  {
-    #fotodeperfil{
+@media only screen and (max-width: 2000px) and (min-width: 1501px) {
+    #fotodeperfil {
+        position: absolute;
         left: 18%;
-        margin-left: -124px;
-        margin-top: -124px;
+        margin-left: -89px;
+        margin-top: -45px;
+        width: 13%;
+        box-shadow: 3px 2px 5px rgb(46, 46, 46);
+
     }
 
-  }
+}
 
-@media only screen and (max-width: 1500px) and (min-width: 1201px)  {
-    #fotodeperfil{
+@media only screen and (max-width: 1500px) and (min-width: 1201px) {
+    #fotodeperfil {
         position: absolute;
         width: 15%;
         border-radius: 4px;
         box-shadow: 3px 2px 5px rgb(46, 46, 46);
         left: 20%;
         margin-left: -128px;
-        margin-top: -87px;}
+        margin-top: -87px;
+    }
 
 
 }
-@media only screen and (max-width: 1200px) and (min-width: 992px)  {
-    #fotodeperfil{
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    #fotodeperfil {
         position: absolute;
         width: 15%;
         border-radius: 4px;
         box-shadow: 3px 2px 5px rgb(46, 46, 46);
         left: 20%;
         margin-left: -97px;
-        margin-top: -87px;}
+        margin-top: -87px;
+    }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 576px)  {
-    #fotodeperfil{
+@media only screen and (max-width: 991px) and (min-width: 576px) {
+    #fotodeperfil {
         position: absolute;
         width: 15%;
         border-radius: 4px;
@@ -101,8 +109,8 @@ h1{
 
 
 
-@media(max-width: 575px){ 
-    #fotodeperfil{
+@media(max-width: 575px) {
+    #fotodeperfil {
         position: absolute;
         width: 60%;
         border-radius: 4px;
@@ -111,16 +119,19 @@ h1{
         margin-left: 3px;
         margin-top: -93x;
     }
-    .row{
+
+    .row {
         height: 900px;
     }
-   h1{
-    font-size: 30px;
-   }
-   .alfiler{
-    display: none;
-   }
- 
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .alfiler {
+        display: none;
+    }
+
 }
 
 
@@ -133,26 +144,27 @@ h1{
     border-radius: 20px;
     margin-top: 10px;
     cursor: pointer;
-    -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
-    -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
-    box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+    -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+    -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
     font-weight: bold;
-  }
-  
-  .download-cv:hover {
+}
+
+.download-cv:hover {
     background-color: azure;
     box-shadow: none;
-  }
+}
 
 
-  .minibtn{
+.minibtn {
     border-radius: 50%;
-  }
-  .btnadd{
+}
+
+.btnadd {
     color: aqua;
-  }
-  .btnadd:hover{
+}
+
+.btnadd:hover {
     color: white;
     transition: 0.3s;
-  }
-  
+}
